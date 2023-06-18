@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public interface JwtService {
 
-    String createAccessToken(String username);
+    String createAccessToken(String email);
     void sendAccessToken(HttpServletResponse response, String accessToken) throws IOException;
     void setAccessTokenHeader(HttpServletResponse response, String accessToken);
     String extractUserEmail(String accessToken);

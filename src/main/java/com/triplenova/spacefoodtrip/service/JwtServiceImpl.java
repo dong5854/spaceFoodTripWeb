@@ -26,7 +26,6 @@ public class JwtServiceImpl implements JwtService{
     private static final String EMAIL_CLAIM = "email";
     private static final String BEARER = "Bearer ";
 
-    private final UserRepository userRepository;
     private final ObjectMapper objectMapper;
 
 
